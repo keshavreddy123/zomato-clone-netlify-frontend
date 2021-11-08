@@ -64,7 +64,7 @@ export const signOut = () => async (dispatch) => {
   try {
     localStorage.removeItem("zomatoUser");
     clearUser();
-   // window.location.href = "https://zomato-clone-netlify.netlify.app/delivery";
+   window.location.href = "https://zomato-clone-netlify.netlify.app/delivery";
 
     return dispatch({ type: SIGN_OUT, payload: {} });
   } catch (error) {
